@@ -1,0 +1,87 @@
+.header{
+    background-color: #2B342A;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 0%;
+    position: fixed;
+    z-index: 3;
+}
+#logo{
+    margin-left: 20px;
+    width: 300px;
+    height: 80%;
+    object-fit: contain;
+}
+ul{
+    margin-right: 20px;
+    display: flex;
+    gap: 40px;
+}
+.botoes-header{
+    color: #D8D8D8;
+    list-style: none;
+    cursor: pointer;
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.botoes-header:hover{
+    color: white;
+    font-weight: 600;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+/*Tela de tablets*/
+@media (max-width:850px){
+    #logo{
+        width: 120px;
+    }
+    .header{
+        height: 50px;
+    }
+}
+
+/*Tela de celulares*/
+@media (max-width:600px){
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .buttons{
+        display: none;
+    }
+
+    .menu-links {
+        position: fixed;   
+        top: 60px;        
+        right: 15px;       
+        background: #2B342A;
+        padding: 8px 10px;
+        width: 160px;
+        height: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        z-index: 9999; 
+    }
+
+    .menu-links ul, li{
+        display: flex;
+        flex-direction: column;
+    }
+}

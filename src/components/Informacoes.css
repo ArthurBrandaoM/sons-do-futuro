@@ -1,0 +1,67 @@
+/*Desktop*/
+
+#informacoes{
+    margin: 0 50px 0 50px; 
+}
+
+.colunas-informacoes{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.coluna-esquerda{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-bottom: 30px;
+    color: white;
+}
+.coluna-direita{
+    width: 50%;
+}
+
+.nome-informacao{
+    font-weight: bold;
+    min-width: 200px;
+}
+
+.texto-informacao{
+    font-weight: 400;
+
+}
+
+#mapa-informacoes{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*Dispositivos Mobile*/
+
+@media (max-width:850px) {
+   .colunas-informacoes{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.coluna-esquerda{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+.coluna-direita{
+    width: 100%;
+}
+
+#mapa-informacoes{
+    width: 100%;
+}
+
+}

@@ -1,0 +1,35 @@
+:root{
+    background-color: #556397; 
+    color: #D8D8D8;
+}
+
+.titulo-secao{
+    padding: 30px;
+    color: white;
+}
+
+#secao-lineup {
+    background-image: linear-gradient(#499E3D, #556397);
+    color: #D8D8D8;
+    padding-top: 90px;
+}
+
+/*Responsividade para tablets*/
+@media (max-width:850px){
+    #secao-lineup{
+        padding-top: 50px;
+    }
+}
+
+/*Efeito de transição (fade-in) para os cards dos artistas quando a página é aberta*/
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.75;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
