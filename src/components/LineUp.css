@@ -24,7 +24,7 @@
     
 }
 
-h2, .dia {
+.dia {
     position: absolute;
     top: 0;
     width: 100%;
@@ -125,6 +125,24 @@ h2, .dia {
     }
 
     .card3 .dia{
+        background-color: #556397;
+    }
+}
+
+@media (min-width:1780px){
+    .card5 .dia{
+        background-color: #499E3D;
+    }
+    .card4 .dia{
+        background-color: #556397;
+    }
+}
+
+@media (min-width:2230px){
+    .card1 .dia, .card3 .dia, .card5 .dia{
+        background-color: #499E3D;
+    }
+    .card4 .dia{
         background-color: #556397;
     }
 }
